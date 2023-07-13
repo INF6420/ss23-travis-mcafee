@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Way Public Library Emergency Response</title>
     <link rel="stylesheet" href="style.css">
+    validate.init();
 </head>
 <body>
 <header>
     <img src="images/blacklogo.png" alt="Way Public Library with its logo. A pair of columns with an arch above.">
-    <h1>Emergency Procedures Quick Reference</h1> 
+    <h1>Emergency Procedures Quick Reference</h1>  
     <navigation>
         <ul>
             <li><a href="index.html">General Response Guidelines</a></li>
@@ -27,26 +28,29 @@
 </header>
 <main>
 <div>
-    <h1>Severe Weather Event Guidelines:</h1>
-    <p>Severe Weather Event Guidelines</p>
-    <p>
-        <ul>
-            <li>Thing 1</li>
-            <li>Thing 2</li>
-            <li>Thing 3</li>
-            <li>Thing 4</li>
-            <li>Thing 5</li>
-            <li>Thing 6</li>
-            <li>Thing 7</li>
-            <li>Thing 8</li>
-        </ul>
-    </p>
+    <h1>Post-Emergency Form:</h1>
+    <p>You can help us make sure that the next emergency is handled better.  Fill out this form to let us know how things went.</p>
+    <p>&nbsp;</p>
+    <form action="https://formspree.io/f/xoqoqray" method="POST" class="validate">
+        <label for="name">Your Name</label>
+        <input name="name" id="name" type="text" class="form-input">
+        
+        <label for="email">Your Email</label>
+        <input name="email" id="email" type="email" class="form-input" required>
+        
+        <label for="message">Your Message</label>
+        <textarea name="message" class="form-input" required></textarea>
+        
+        <!-- your other form fields go here -->
+        <button type="submit">Submit</button>
+      </form>
+
 </div>
 </main>
 <footer>
     <div>
         <h1>DON'T PANIC - CONSIDER 911</h1>
-        <p>Fill out a <a href="post-emergency.html">post-emergency report.</a></p>
+        <p>Thank you for fill out a <a href="post-emergency.html">post-emergency report.</a></p>
     </div>
 </footer>
 </body>
