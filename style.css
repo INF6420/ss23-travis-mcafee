@@ -51,6 +51,11 @@
     max-width: 1200px;
     border: 2px solid #000;
   }
+
+  footer a {
+    color: red;
+  }
+
   navigation {
     overflow-x: auto; 
   }
@@ -116,3 +121,52 @@
 .indented-list li {
     margin-left: 20px; /* Indentation using margin */
   }
+
+  label {
+    display: block;
+    font-weight: 700;
+  }
+
+.form-input {
+  border: 2px solid red;
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+
+}
+
+[type="submit"] {
+  background: rgb(160, 102, 102);
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 1.5em;
+  border: 0;
+  Width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+textarea {
+resize: vertical;
+}
+
+ @media screen and (min-width: 1065px){ 
+  form {
+    width: 30%;
+    margin: 3em auto;
+  }
+}
+
+.error {
+  border-color:#ff0000;
+
+}
+.error-message {
+  color: red;
+  font-weight: 700;
+  margin: -1em 0 1.5em;
+}
